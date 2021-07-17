@@ -500,3 +500,25 @@
 
   }
 }
+
+@media (min-width:769px) and (max-width:1024px){
+  .my__pic{
+      width:280px;
+      float:left;
+  }
+
+  #my__pic__div{
+    background-color: teal;
+
+  }
+}
+
+@media(min-width:1025px){
+  section {
+    top: 15rem !important;
+  }
+
+  .bottom__text{
+    top:30rem !important;
+  }
+}
