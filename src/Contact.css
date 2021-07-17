@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+
+#container__id{
+    margin-top: 2rem !important;
+    margin-bottom: 6rem;
+    width: 100%;
+    background-color:#111;
+    margin: 7rem 0 4rem 0;
+}
+
+.contact__header{
+    font-size: 30px;
+    font-weight: 600;
+    width: auto;
+    margin-bottom: 40px;
+    font-family: 'Oswald', sans-serif;    
+    display:inline-block !important;
+}
+
+p{
+    text-align: left;
+    color:white;
+ }
+
+#contact__info > p {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Heebo', sans-serif !important;    
+}
+
+
+.contact__label{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;    
+}
+
+.contact__form{
+     width: 32rem;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+ }
+
+.half__col{
+    width:50%;
+    height: 100%;
+ }
+
+ .contact__form__container{
+     width: 100% !important;
+ }
+
+
+.half__col > input {
+     margin-bottom: 1.7rem;
+     border-radius:0;
+     width:250px !important;
+     font-size: 12px;
+     font-weight: 400;
+     font-family: 'Heebo', sans-serif;
+     box-shadow: none;
+     border:none;
+     background: rgba(51,51,51,.5);
+     height: 45px;
+    }
+
+    ::placeholder{
+        color:white;
+        padding-left: 7px;
+    }
+ 
+.full__col{
+    width: 35rem;
+    display: block;
+   
+}
+
+.full__col > textarea {
+    width: 99.5%;
+    margin-right:2px;
+    background: rgba(51,51,51,.5);
+    height: 150px;
+    font-size: 12px;
+    font-weight: 400;
+    border: none;
+    border-radius: 0;
+    font-family: 'Heebo', sans-serif;
+}
+
+
+
+.contact__btn{
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+}
+
+.btn{
+    color: white !important;
+    text-decoration: none;
+    border-radius: 0 !important;
+    width: 6rem;
+    height: 2rem;
+    cursor: pointer;
+    padding: 5px 23px !important;
+    font-family: 'Heebo', sans-serif;
+    font-size: 14px !important ;
+    font-weight: 500 !important;
+    background: rgba(51,51,51,.5) !important;
+    transition: all 0.3s;
+}
+
+.btn:hover{
+    color:white;
+    background-color: rgba(51,51,51,.7) !important;
+}
+
+#contact__info{
+    /* background-color: blue; */
+}
+
+/********************* Media Query *******************/
+
+@media (min-width: 320px) and (max-width: 575px)  {
+
+    #contact__container{
+            display:block !important;
+            
+    }
+    #contact__info {
+       width: fit-content;
+       padding-right: 3.5rem;
+       overflow-wrap: break-word;
+    }
+
+    #contact__form__container{
+        margin-top: 2rem;
+    }
+    #contact__info > p{
+        white-space: pre-line;
+        overflow-wrap: break-word;
+        text-align: center;
+        /* background-color: yellow; */
+    }
+
+    .contact__form{
+     text-align: center !important;
+     width: 100%;
+    margin-left: -2.5rem !important;
+    /* background-color: blue; */
+    display: block;
+    }
+
+    .half__col{
+    padding-left: 0 !important;
+    height: auto;
+    text-align: center;
+    /* background-color: teal; */
+
+    }
+
+    .full__col{
+        width:50%;
+    }
+
+    .contact__label{
+        text-align: center;
+        width: 100%;
+    }
+
+    .contact__header{
+        text-align: center;
+        width: 100%;
+    }
+
+    .contact__form{
+        text-align: center;
+        width: 100%;
+        display:block;
+        padding-left: 26%;
+       
+    }
+
+    .full__col{
+       
+        display: block;
+        width: 15.5rem;
+    }
+    .contact__btn{
+        /* background-color: khaki; */
+    text-align: center;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 1024px)  {
+
+    #contact__container{
+            display:block !important;
+            
+    }
+    #contact__info > p {
+        position: center !important;
+        display: block;
+        /* word-wrap: break-word !important;
+        overflow-wrap: break-word;
+        text-align: center; */
+        white-space: pre-line;
+    }
+
+    .contact__form{
+        display: block !important;
+        /* background-color: teal; */
+        width: 100%;
+    }
+
+    .full__col{
+        width:100%;
+    }
+}

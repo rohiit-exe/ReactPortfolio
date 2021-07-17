@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+.footer-brand{
+    color:white;
+    text-decoration: none;
+}
+
+.footer-brand:hover{
+    text-decoration: none !important;
+    color: white;
+}
+.home__icon{
+    display: flex;
+    justify-content: center;
+    /* background:green; */
+    margin-bottom:1rem;
+    position: relative;
+}
+
+#footer__icons{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    /* background-color: green; */
+   /* background-color: grey; */
+}
+
+.footer__icon__item{
+    list-style-type:none;
+    position: relative;
+    /* background-color: lawngreen; */
+}
+
+.footer-icon-link{
+    text-decoration: none;
+    color:white;
+    position: relative;
+}
+
+.footer-icon-link:hover{
+    color: white !important;
+}
+
+.footer__icons__list{
+    /* background-color:red; */
+    justify-content: center;
+     padding-left:10px;
+     margin:3px;
+     position: relative;
+}
+
+.footer__para{
+    margin-top: 3px;
+    text-align: center;
+    position: relative;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Heebo', sans-serif; 
+}
+
+
