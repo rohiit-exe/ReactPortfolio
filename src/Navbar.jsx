@@ -1,5 +1,4 @@
 import React from 'react';
-import CameraIcon from '@material-ui/icons/Camera';
 import { FaFacebookF, FaInstagram, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import "./Navbar.css";
 import Typewriter from 'typewriter-effect';
@@ -13,11 +12,6 @@ const Navbar = () => {
         <nav className="navbar navbar-light-50 pt-0 position-relative">
             <div className="page-header">
                 <Particles params={ParticlesConfig2} />
-                {/* <a className="navbar-brand" href="/">
-                    <CameraIcon style={{ fontSize: 35 }} />
-                    Rohit
-                </a> */}
-                <p className="bottom__text">Creative Designer And Developer</p>
             </div>
         </nav>
         <div className="container-fluid ps-0 pe-0 col-lg mt-4 ">
