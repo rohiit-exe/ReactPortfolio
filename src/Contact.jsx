@@ -2,6 +2,10 @@ import React from 'react';
 import "./Contact.css"
 
 export default function Contact() {
+
+    const handler=()=>{
+        alert("Form Submitted!");
+    }
     return (
         <>
             <div id="container__id">
@@ -48,7 +52,7 @@ export default function Contact() {
                                 </div>
 
                                 <div className="contact__btn">
-                                    <button className="btn">Submit</button>
+                                    <button className="btn" onClick={handler}>Submit</button>
                                 </div>
                             </div>
                         </div>
