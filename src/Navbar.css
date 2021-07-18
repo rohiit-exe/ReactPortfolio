@@ -75,7 +75,7 @@
     section{
     position: absolute;
     /* top: 16.5rem; */
-    top: 38rem !important;
+    top: 23rem !important;
     width: auto;
     /* background: burlywood; */
     
@@ -248,11 +248,15 @@
    /* background: salmon; */
  }
 
+ #my__pic__div{
+   /* background-color: red; */
+ }
+
 .my__pic{
-  width: 50%;
+  width: 60%;
   height: 400px;
   margin-top: -2px;
-  margin-right: 11rem;
+  margin-right: 8rem;
   margin-bottom:2rem;
   
   float: right;
