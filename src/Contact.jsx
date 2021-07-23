@@ -1,13 +1,24 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import "./Contact.css"
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 export default function Contact() {
+
+    useEffect(() => {
+        Aos.init({ duration: 2000 })
+    }, [])
+
+
+    const handler=()=>{
+        alert("Form Submitted!");
+    }
     return (
         <>
             <div id="container__id">
                 <div className="container" id="contact__container">
                     <div className="row pt-5">
-                        <div className="col-lg-5 col-md- ms-5 col-sm-5 text-light" id="contact__info">
+                        <div data-aos="fade-right" className="col-lg-5 col-md- ms-5 col-sm-5 text-light" id="contact__info">
                             <h1 className="contact__header " > My Contact </h1>
                             <p> You can contact me and access my services
                                 on below mentioned information.
@@ -24,7 +35,7 @@ export default function Contact() {
                             <p> rohiitnegii@gmail.com</p>
                         </div>
 
-                        <div className="col-lg-5 col-md-5 col-sm-5 text-light" id="contact__form__container">
+                        <div data-aos="fade-left" className="col-lg-5 col-md-5 col-sm-5 text-light" id="contact__form__container">
                             <h1 className="contact__header"> Quick Contact Form </h1>
                             <div className="contact__form">
                                 <div className="half__col">
@@ -48,7 +59,7 @@ export default function Contact() {
                                 </div>
 
                                 <div className="contact__btn">
-                                    <button className="btn">Submit</button>
+                                    <button className="btn" onClick={handler}>Submit</button>
                                 </div>
                             </div>
                         </div>

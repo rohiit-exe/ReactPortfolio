@@ -1,0 +1,11 @@
+.nav__icon__div{
+    top:2px;
+    background-color:green !important;
+    display:absolute;
+}
+
+.nav__icon{
+    text-decoration: none !important;
+    top:2px;
+    color:white;
+}

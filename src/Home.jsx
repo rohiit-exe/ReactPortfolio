@@ -2,6 +2,8 @@ import React from 'react';
 import "./Home.css";
 
 export default function Home() {
+  
+
     return (
         <>
             <div className="container w-100 mx-6 mt-6">

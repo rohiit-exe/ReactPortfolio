@@ -1,38 +1,68 @@
-import React from 'react';
-import CameraIcon from '@material-ui/icons/Camera';
+import React, {useEffect} from 'react';
 import { FaFacebookF, FaInstagram, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import "./Navbar.css";
 import Typewriter from 'typewriter-effect';
 import Particles from 'react-particles-js';
 import ParticlesConfig2 from './particle-config2';
 import { Link } from "react-scroll";
+import Aos from 'aos';
+import "aos/dist/aos.css";
+import { Route } from "react-router-dom";
+import Home from "./Home";
+
+import { FaBars } from 'react-icons/fa';
 
 const Navbar = () => {
 
+    useEffect(() => {
+        Aos.init({ duration: 2000 })
+    }, [])
+
+//     const [click, setClick] = React.useState(false);
+
+//     const closeWindow = () => setClick(false);
+
+
+
     return (<>
+
         <nav className="navbar navbar-light-50 pt-0 position-relative">
+
             <div className="page-header">
+                {/* <div className="nav__icon__div">
+                    <a className="nav__icon">
+                        <FaBars/>
+                    </a>
+
+                    <ul className={click ? "menu-active" : "menu"}>
+                        <li
+                            className=""><Route path="/Home" exact component={Home} onClick={closeWindow}>
+                                Home
+                            </Route>
+                        </li>
+                        <li
+                        className="" onClick={closeWindow}>Contact</li>
+                          <li
+                        className="" onClick={closeWindow}>Footer</li>
+                    </ul>
+                </div> */}
                 <Particles params={ParticlesConfig2} />
-                {/* <a className="navbar-brand" href="/">
-                    <CameraIcon style={{ fontSize: 35 }} />
-                    Rohit
-                </a> */}
-                <p className="bottom__text">Creative Designer And Developer</p>
             </div>
+
         </nav>
         <div className="container-fluid ps-0 pe-0 col-lg mt-4 ">
 
-            <div className=" col-md-12 col-sm-12 col-xs-12 " id="intro">
-                <h6 className="name">I   AM   ROHIT    NEGI</h6>
+            <div  className=" col-md-12 col-sm-12 col-xs-12 " id="intro">
+                <h6 data-aos="fade-right" className="name">I   AM   ROHIT    NEGI</h6>
                 {/* <img className="creative__designer" src="images/designer.png" alt="desinger" /> */}
                 <h1 className="creative__designer__heading">
-                <Typewriter
-                    options={{
-                        strings: ['Creative Designer'],
-                        autoStart: true,
-                        loop: true,
-                    }}/></h1>
-                <button type="button" className="contact__button"> <Link to="container__id" spy={true} smooth={true}>
+                    <Typewriter
+                        options={{
+                            strings: ['Creative Designer'],
+                            autoStart: true,
+                            loop: true,
+                        }} /></h1>
+                <button data-aos="fade-right" type="button" className="contact__button"> <Link to="container__id" spy={true} smooth={true}>
                     CONTACT ME
                 </Link>
                 </button>
@@ -71,10 +101,10 @@ const Navbar = () => {
 
             <div className="row ps-5">
                 <div className="col-6 position-absolute" id="about__me">
-                    <div id="about__heading">
-                    <p className="d-flex align-items-start pt-5" id="head">Web Developer & Designer</p>
+                    <div  id="about__heading">
+                        <p className="d-flex align-items-start pt-5" id="head">Web Developer & Designer</p>
 
-                    <h1 className="d-flex align-items-start mt-3  fw-bold" id="rohit"> About Me</h1></div>
+                        <h1 className="d-flex align-items-start mt-3  fw-bold" id="rohit"> About Me</h1></div>
                     <p className="about__me__text"> As a developer, I enjoy bridging the gap between
                         engineering and design, combining my technical knowledge with my keen eye for design to create a beautiful product.
                         My goal is to always build applications that are scalable and efficient under
@@ -87,8 +117,8 @@ const Navbar = () => {
 
 
                     <div className="button__cv__div">
-                    <a className="button__cv" href="/files/Resumeee.pdf" download target="_blank" >DOWNLOAD CV</a>
-                </div></div>
+                        <a className="button__cv" href="/files/Resumeee.pdf" download target="_blank" >DOWNLOAD CV</a>
+                    </div></div>
                 <div className="col-6 pt-5" id="my__pic__div">
                     <img className="my__pic" src="images/Capture.png" alt="my pic" />
                 </div>

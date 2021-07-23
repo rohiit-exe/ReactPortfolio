@@ -14,6 +14,23 @@
   padding-left: 10px;
 }
 
+/* .nav__icon__div{
+  top:2rem;
+  background-color:green !important;
+  display:absolute;
+  width:100%;
+}
+
+.nav__icon{
+  text-decoration: none !important;
+  padding-left:10px;
+  color:white;
+  font-size:x-large;
+}
+
+.nav__icon:active{
+  text-decoration:none !important;
+} */
 
 .creative__designer__heading{
   position: absolute;
@@ -52,11 +69,11 @@
   }
 
 .icon-link{
-    color: var(--bg-line);
+    color: var(--bg-line) !important;
     list-style-type: none;
     margin-left: 10px;
     cursor: pointer;
-    font-size:small;
+    font-size:medium;
     padding:1px;
    }
 
@@ -75,14 +92,16 @@
     section{
     position: absolute;
     /* top: 16.5rem; */
-    top: 38rem !important;
+    top: 23rem !important;
     width: auto;
     /* background: burlywood; */
+    
     }
 
     .social__div{
       /* background: blue; */
-      padding-bottom: 1px;
+      padding-bottom: 3px;
+      
     }
 
    .icon__social{
@@ -91,7 +110,7 @@
     color:var(--bg-line);
     margin-left:4px;  
     letter-spacing: 3px;
-    font-size: small;
+    font-size: medium;
   }
 
   .social__div::after{
@@ -138,6 +157,11 @@
     position: relative;
     text-align: left;
     color: white;
+    }
+
+    #icoon{
+      display: absolute;
+      top: 10px ;
     }
 
 #head{
@@ -246,11 +270,15 @@
    /* background: salmon; */
  }
 
+ #my__pic__div{
+   /* background-color: red; */
+ }
+
 .my__pic{
   width: 60%;
   height: 400px;
   margin-top: -2px;
-  margin-right: 7rem;
+  margin-right: 8rem;
   margin-bottom:2rem;
   
   float: right;
@@ -366,8 +394,7 @@
     height: 23px;
   }
   section{
-    top:10px !important;
-    margin-top: 49px;
+    display: none;
   }
 
   .bottom__text{
@@ -375,7 +402,7 @@
   }
 }
 
-@media (min-width:769px) and (max-width:1024px){
+@media (min-width:769px) and (max-width:991px){
   .name{
     font-size: 13px;
     font-weight: 100;
@@ -408,7 +435,7 @@
   }
 }
 
-@media (min-width:1025px){
+/* @media (min-width:1025px){
   section{
     top:15rem;
   }
@@ -416,7 +443,7 @@
   .bottom__text{
     top: 31rem;
   }
-}
+} */
 
 @media (max-width:545px){
   #about__me{
@@ -425,7 +452,7 @@
     }
 
     #about__heading{ 
-      padding-left:22%;
+      padding-left:21%;
       /* background-color: teal; */
     }
     .about__me__text{
@@ -435,24 +462,28 @@
 
     .button__cv__div{
       /* background-color: teal; */
-      padding-left: 18%;
-    }
+      width: 100%;
+      padding-left: 3.9rem;
+      }
+
+    
 
     #my__pic__div{
       /* background-color:teal ; */
       width:100% !important;
+      height: auto;
     }
 
     .my__pic{
-      width:250px;
+      width:200px !important;
       float:left;
-      
-      height:280px;
+      margin-left: 1.5rem;
+      height: auto;
     }
 
     #head{
       /* background-color:teal; */
-      margin-left:-4px !important;
+      margin-left:-13px !important;
     }
 }
 
@@ -489,14 +520,19 @@
 
 
 
-@media (min-width:769px) and (max-width:1024px){
+@media (min-width:769px) and (max-width:991px){
   .my__pic{
       width:280px;
       float:left;
   }
-
-  #my__pic__div{
-    background-color: teal;
-
-  }
 }
+
+/* @media(min-width:1025px){
+  section {
+    top: 15rem !important;
+  }
+
+  .bottom__text{
+    top:30rem !important;
+  }
+} */
